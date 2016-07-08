@@ -1,0 +1,6 @@
+(($) ->
+
+	$.fn.hoverSlippery (options) ->
+		
+
+) jQuery
