@@ -1,0 +1,26 @@
+{
+  "name": "hoverslippery",
+  "version": "1.0.0",
+  "description": "The jQuery plugin for doing cool hovers o n inline navigations",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "grunt-cli": "^1.2.0"
+  },
+  "devDependencies": {
+    "grunt-cli": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hastalavistababy/HoverSlippery.git"
+  },
+  "keywords": [
+    "hoverslippery"
+  ],
+  "author": "Mogeli lortkipanidze",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hastalavistababy/HoverSlippery/issues"
+  },
+  "homepage": "https://github.com/Hastalavistababy/HoverSlippery#readme"
+}
