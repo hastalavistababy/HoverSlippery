@@ -1,7 +1,31 @@
+- navArr = ['Home', 'Fashion', 'Lifestyles', 'Travels', 'Music', 'About us', 'Contact'];
+
 <!DOCTYPE html>
 html(lang="en")
 	head
 		meta(charset="UTF-8")
 		title Hover slippery
+		link(rel="stylesheet", href="css/style.css")
+		script(type='text/javascript' src='../bower_components/jquery/dist/jquery.min.js')
 	body
-		
+		//- c = container
+		.c
+			//- t = title
+			h1.t Hover slippery
+			//- t-sm = small title (modifier)
+			h2.t--sm jQuery plugin
+			//- Def navigation
+			nav.nav.default
+				ul
+					each item in navArr
+						if item == 'Home'
+							li.nav__item.active
+								a(href="#")= item
+						else
+							li.nav__item
+								a(href="#")= item
+		script(type='text/javascript' src='../dist/hoverSlippery.js')
+		script.
+			$(document).ready(function(){
+				$('.default').hoverSlippery();
+			})

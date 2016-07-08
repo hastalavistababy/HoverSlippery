@@ -1,4 +1,49 @@
-body {
-	margin: 0;
+%reset {
 	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #191919;
+	@extend %reset;
+}
+* {
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+}
+ul {
+	@extend %reset;
+}
+li {
+	display: inline-block;
+	@extend %reset;
+}
+h1 {@extend %reset;}
+h2 {@extend %reset;}
+a {
+	text-decoration: none;
+}
+.c {
+	min-width: 1280px;
+	margin: 0 auto;
+}
+
+.t {
+	padding: 25px 0;
+	font-size: 25px;
+	text-transform: uppercase;
+	&--sm {
+		padding: 0;
+		font-size: 14px;
+	}
+}
+.nav {
+	margin: 25px auto;
+	&.default {
+		line-height: 35px;
+		height: 35px;
+	}
+	a {
+		padding: 0 10px;
+	}
 }

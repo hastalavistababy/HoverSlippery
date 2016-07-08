@@ -3,6 +3,30 @@
   <head>
     <meta charset="UTF-8"/>
     <title>Hover slippery</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="c">
+      <h1 class="t">Hover slippery</h1>
+      <h2 class="t--sm">jQuery plugin</h2>
+      <nav class="nav default">
+        <ul>
+          <li class="nav__item active"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Fashion</a></li>
+          <li class="nav__item"><a href="#">Lifestyles</a></li>
+          <li class="nav__item"><a href="#">Travels</a></li>
+          <li class="nav__item"><a href="#">Music</a></li>
+          <li class="nav__item"><a href="#">About us</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script type="text/javascript" src="../dist/hoverSlippery.js"></script>
+    <script>
+      $(document).ready(function(){
+      	$('.default').hoverSlippery();
+      })
+    </script>
+  </body>
 </html>
