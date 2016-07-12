@@ -21,11 +21,29 @@
           <li class="nav__item"><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <h3>Twice bower</h3>
+      <nav class="nav twiceBorder">
+        <ul>
+          <li class="nav__item active"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Fashion</a></li>
+          <li class="nav__item"><a href="#">Lifestyles</a></li>
+          <li class="nav__item"><a href="#">Travels</a></li>
+          <li class="nav__item"><a href="#">Music</a></li>
+          <li class="nav__item"><a href="#">About us</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
     <script type="text/javascript" src="../dist/hoverSlippery.js"></script>
     <script>
       $(document).ready(function(){
+      	//- Default 
       	$('.default').hoverSlippery();
+      	//- Twice border
+      	$('.twiceBorder').hoverSlippery({
+      		border: true,
+      		twiceBorder : true
+      	})
       })
     </script>
   </body>

@@ -49,6 +49,19 @@
           $slippery.css({
             backgroundColor: defaults.bgColor
           });
+        } else if (defaults.twiceBorder) {
+          $slippery.css({
+            'border-radius': 0,
+            'border-top': $defaultsBorderOptions,
+            'border-bottom': $defaultsBorderOptions
+          });
+        } else {
+          $slippery.css({
+            backgroundColor: 'none',
+            'border-bottom': $defaultsBorderOptions,
+            top: defaults.borderTop,
+            borderRadius: 0
+          });
         }
         $actionElement.click(function() {
           var $thisEl, $thisElParent, $thisElParentPosLeft;

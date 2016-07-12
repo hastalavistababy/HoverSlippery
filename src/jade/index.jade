@@ -24,8 +24,25 @@ html(lang="en")
 						else
 							li.nav__item
 								a(href="#")= item
+			//- Twice border
+			h3 Twice bower
+			nav.nav.twiceBorder
+				ul
+					each item in navArr
+						if item == 'Home'
+							li.nav__item.active
+								a(href="#")= item
+						else
+							li.nav__item
+								a(href="#")= item
 		script(type='text/javascript' src='../dist/hoverSlippery.js')
 		script.
 			$(document).ready(function(){
+				//- Default 
 				$('.default').hoverSlippery();
+				//- Twice border
+				$('.twiceBorder').hoverSlippery({
+					border: true,
+					twiceBorder : true
+				})
 			})

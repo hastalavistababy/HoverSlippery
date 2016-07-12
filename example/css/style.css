@@ -33,6 +33,9 @@ a {
   .nav.default {
     line-height: 35px;
     height: 35px; }
+  .nav.twiceBorder {
+    line-height: 30px;
+    height: 30px; }
   .nav a {
     padding: 0 10px; }
 
