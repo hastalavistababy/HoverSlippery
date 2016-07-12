@@ -1,4 +1,4 @@
-body, ul, li, h1, h2 {
+body, ul, li, h1, h2, h3 {
   padding: 0;
   margin: 0; }
 
@@ -8,10 +8,16 @@ body {
 * {
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
-  text-align: center; }
+  text-align: center;
+  font-size: 14px; }
 
 li {
   display: inline-block; }
+
+h3 {
+  font-size: 13px; }
+  h3.space {
+    margin-top: 25px; }
 
 a {
   text-decoration: none; }
@@ -33,7 +39,7 @@ a {
   .nav.default {
     line-height: 35px;
     height: 35px; }
-  .nav.twiceBorder, .nav.underline {
+  .nav.twiceBorder, .nav.underline, .nav.overline {
     line-height: 30px;
     height: 30px; }
   .nav a {

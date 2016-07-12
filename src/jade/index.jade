@@ -23,6 +23,7 @@ html(lang="en")
 			//- t-sm = small title (modifier)
 			h2.t--sm jQuery plugin
 			//- Def navigation
+			h3.space Default
 			nav.nav.default
 				+navigation
 			//- Twice border
@@ -32,6 +33,10 @@ html(lang="en")
 			//- Underline
 			h3 Underline
 			nav.nav.underline
+				+navigation
+			//- Underline
+			h3 overline
+			nav.nav.overline
 				+navigation
 
 		script(type='text/javascript' src='../dist/hoverSlippery.js')
@@ -44,8 +49,14 @@ html(lang="en")
 					border: true,
 					twiceBorder : true
 				})
+				//- Underline
 				$('.underline').hoverSlippery({
 					border: true,
 					underline: true
+				})
+				//- Overline
+				$('.overline').hoverSlippery({
+					border: true,
+					overline: true
 				})
 			})

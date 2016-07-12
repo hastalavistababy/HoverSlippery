@@ -10,6 +10,7 @@ body {
 	color: #fff;
 	font-family: 'Ubuntu', sans-serif;
 	text-align: center;
+	font-size: 14px;
 }
 ul {
 	@extend %reset;
@@ -20,6 +21,12 @@ li {
 }
 h1 {@extend %reset;}
 h2 {@extend %reset;}
+h3 {@extend %reset;
+	font-size: 13px;
+	&.space {
+		margin-top: 25px;
+	}
+}
 a {
 	text-decoration: none;
 }
@@ -43,7 +50,7 @@ a {
 		line-height: 35px;
 		height: 35px;
 	}
-	&.twiceBorder, &.underline {
+	&.twiceBorder, &.underline, &.overline {
 		line-height: 30px;
 		height: 30px;
 	}

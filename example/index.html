@@ -10,6 +10,7 @@
     <div class="c">
       <h1 class="t">Hover slippery</h1>
       <h2 class="t--sm">jQuery plugin</h2>
+      <h3 class="space">Default</h3>
       <nav class="nav default">
         <ul>
           <li class="nav__item active"><a href="#">Home</a></li>
@@ -45,6 +46,18 @@
           <li class="nav__item"><a href="#">Contact</a></li>
         </ul>
       </nav>
+      <h3>overline</h3>
+      <nav class="nav overline">
+        <ul>
+          <li class="nav__item active"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Fashion</a></li>
+          <li class="nav__item"><a href="#">Lifestyles</a></li>
+          <li class="nav__item"><a href="#">Travels</a></li>
+          <li class="nav__item"><a href="#">Music</a></li>
+          <li class="nav__item"><a href="#">About us</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </div>
     <script type="text/javascript" src="../dist/hoverSlippery.js"></script>
     <script>
@@ -56,9 +69,15 @@
       		border: true,
       		twiceBorder : true
       	})
+      	//- Underline
       	$('.underline').hoverSlippery({
       		border: true,
       		underline: true
+      	})
+      	//- Overline
+      	$('.overline').hoverSlippery({
+      		border: true,
+      		overline: true
       	})
       })
     </script>

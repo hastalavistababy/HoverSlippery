@@ -66,6 +66,11 @@
 					'border-radius' : 0,
 					'border-bottom' : $defaultsBorderOptions
 				})
+			else if defaults.overline
+				$slippery.css({
+					'border-radius' : 0,
+					'border-top' : $defaultsBorderOptions
+				})
 			else
 				$slippery.css({
 					backgroundColor 	: 'none',
