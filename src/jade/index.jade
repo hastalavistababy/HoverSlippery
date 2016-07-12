@@ -1,5 +1,13 @@
 - navArr = ['Home', 'Fashion', 'Lifestyles', 'Travels', 'Music', 'About us', 'Contact'];
-
+mixin navigation
+	ul
+		each item in navArr
+			if item == 'Home'
+				li.nav__item.active
+					a(href="#")= item
+			else
+				li.nav__item
+					a(href="#")= item
 <!DOCTYPE html>
 html(lang="en")
 	head
@@ -16,25 +24,16 @@ html(lang="en")
 			h2.t--sm jQuery plugin
 			//- Def navigation
 			nav.nav.default
-				ul
-					each item in navArr
-						if item == 'Home'
-							li.nav__item.active
-								a(href="#")= item
-						else
-							li.nav__item
-								a(href="#")= item
+				+navigation
 			//- Twice border
-			h3 Twice bower
+			h3 Twice border
 			nav.nav.twiceBorder
-				ul
-					each item in navArr
-						if item == 'Home'
-							li.nav__item.active
-								a(href="#")= item
-						else
-							li.nav__item
-								a(href="#")= item
+				+navigation
+			//- Underline
+			h3 Underline
+			nav.nav.underline
+				+navigation
+
 		script(type='text/javascript' src='../dist/hoverSlippery.js')
 		script.
 			$(document).ready(function(){
@@ -44,5 +43,9 @@ html(lang="en")
 				$('.twiceBorder').hoverSlippery({
 					border: true,
 					twiceBorder : true
+				})
+				$('.underline').hoverSlippery({
+					border: true,
+					underline: true
 				})
 			})

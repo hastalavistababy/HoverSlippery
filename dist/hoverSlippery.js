@@ -15,7 +15,7 @@
         speed: 300,
         radius: '5px',
         border: false,
-        borderColor: '#11a8ab',
+        borderColor: '#efefef',
         borderTop: 0,
         borderStyle: 'solid',
         borderWidth: '1px',
@@ -53,6 +53,11 @@
           $slippery.css({
             'border-radius': 0,
             'border-top': $defaultsBorderOptions,
+            'border-bottom': $defaultsBorderOptions
+          });
+        } else if (defaults.underline) {
+          $slippery.css({
+            'border-radius': 0,
             'border-bottom': $defaultsBorderOptions
           });
         } else {
