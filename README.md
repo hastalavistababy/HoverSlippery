@@ -19,7 +19,7 @@ or include minified file
 ```
 * Init hoverSlippery
 <br />
-<b>HTML</b>
+<b>HTML</b> One li element must be with class 'active'
 ```html
   <nav class='forUsePlugin'>
     <ul>
