@@ -23,7 +23,7 @@ or include minified file
 ```html
   <nav class='forUsePlugin'>
     <ul>
-      <li>
+      <li class='active'>
         <a href="#">Item 1</a>
       </li>
       <li>
