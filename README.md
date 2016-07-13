@@ -23,16 +23,36 @@ or include minified file
 ```html
   <nav class='forUsePlugin'>
     <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-      <li>Item 5</li>
+      <li>
+        <a href="#">Item 1</a>
+      </li>
+      <li>
+        <a href="#">Item 2</a>
+      </li>
+      <li>
+        <a href="#">Item 3</a>
+      </li>
+      <li>
+        <a href="#">Item 4</a>
+      </li>
+      <li>
+        <a href="#">Item 5</a>
+      </li>
     </ul>
   </nav>
 ```
+
+&nbsp;
+    <b>CSS</b>
+    
+```CSS
+  ul { padding:0;margin:0; }
+  li { display: inline-block; }
+```
+
 &nbsp;
       <b>Javascript</b>
+      
 ```js
   $(document).ready(function(){
     $('.forUsePlugin').hoverSlippery();
