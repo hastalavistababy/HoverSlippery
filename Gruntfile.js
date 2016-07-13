@@ -29,6 +29,16 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		uglify: {
+			options: {
+				mangle: false
+			},
+			my_target: {
+				files: {
+					'dist/hoverSlippery.min.js': ['dist/hoverSlippery.js']
+				}
+			}
+		},
 		watch : {
 			scripts : {
 				files : ['src/coffee/*.coffee'],
@@ -46,6 +56,7 @@ module.exports = function(grunt) {
 
 	});
 
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-coffee');
