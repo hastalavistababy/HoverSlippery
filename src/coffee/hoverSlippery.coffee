@@ -28,7 +28,7 @@
 
 			$this.find('ul').append("<li class='slippery'></li>");
 
-			$active = $('.active')
+			$active = $this.find('.active')
 			$slippery = $this.find('.slippery')
 			$actionElement = $this.find('a')
 			$this.css({
